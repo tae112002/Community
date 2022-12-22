@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input {
+  border: 0;
+  outline: none;
+  background-color: white;
+}
+
+img {
+  width: 28px;
+}
+.boxs {
+  display: flex;
+  justify-content: center;
+}
+.right {
+  width: 250px;
+}
+.menu .menu-box {
+  display: flex;
+}
+.menu .menu-box span {
+  font-size: 20px;
+}
+.center {
+  width: 500px;
+}
+.search-box {
+  background-color: rgba(255, 166, 166, 0.3);
+  margin: 0 16px;
+  border-radius: 15px;
+}
+.search-box input {
+  background-color: transparent;
+}
+.left {
+  width: 350px;
+}
+.nowMenu {
+  font-weight: bold;
+}
