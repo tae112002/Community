@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/home.css" />
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home.css}" />
     <title>OWL</title>
   </head>
   <body>
     <div class="boxs">
       <div class="right">
-        <div class="logo"><img src="../static/image/logo.png" /></div>
+        <div class="logo"><img th:src="@{/images/logo.png}" /></div>
         <div class="menu">
           <div class="menu-box" onclick="togglehashtagIcon()">
-            <img src="../static/image/hashtagIcon2.png" id="hashtagIcon" />
+            <img th:src="@{/images/hashtagIcon2.png}" id="hashtagIcon" />
             <span id="hashtagSpan" class="nowMenu">탐색하기</span>
           </div>
           <div class="menu-box" onclick="toggleSettingIcon()">
-            <img src="../static/image/settingIcon.png" id="settingIcon" />
+            <img th:src="@{/images/settingIcon.png}" id="settingIcon" />
             <span id="settingSpan">설정</span>
           </div>
         </div>
@@ -25,7 +25,7 @@
       <div class="center">
         <div class="search">
           <div class="search-box">
-            <img src="../static/image/searchIcon.png" />
+            <img th:src="@{/images/searchIcon.png}" />
             <input type="text" />
           </div>
         </div>
@@ -35,6 +35,6 @@
         <div class="user">user</div>
       </div>
     </div>
-    <script src="../static/js/home.js"></script>
+    <script th:src="@{/js/home.js}"></script>
   </body>
 </html>

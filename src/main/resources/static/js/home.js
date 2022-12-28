@@ -1,16 +1,16 @@
 function togglehashtagIcon() {
   document.getElementById("hashtagIcon").src =
-    "../static/image/hashtagIcon2.png";
+    "/images/hashtagIcon2.png";
   document.getElementById("settingIcon").src =
-    "../static/image/settingIcon.png";
+    "/images/settingIcon.png";
   document.getElementById("settingSpan").classList.remove("nowMenu");
   document.getElementById("hashtagSpan").classList.add("nowMenu");
 }
 function toggleSettingIcon() {
   document.getElementById("settingIcon").src =
-    "../static/image/settingIcon2.png";
+    "/images/settingIcon2.png";
   document.getElementById("hashtagIcon").src =
-    "../static/image/hashtagIcon.png";
+    "/images/hashtagIcon.png";
   document.getElementById("hashtagSpan").classList.remove("nowMenu");
   document.getElementById("settingSpan").classList.add("nowMenu");
 }
